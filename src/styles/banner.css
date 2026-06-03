@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  background: #f8f7f4;
+  height: 100vh;
+  padding: 60px 5%;
+  position: relative;
+}
+.banner-image{
+    height: 95%;
+
+}
+.banner-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit:fill}
+.bannerQuote{
+    background: rgba(255, 255, 255, 0.947);
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 200px;
+   
+    position: absolute;
+    bottom: 8%;
+    left: 80%;
+    z-index: 999;
+}
+.bannerQuote p{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 0.875rem;
+    color: #333;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .banner{
+        height:70vh;
+    }
+    .bannerQuote{
+        left: 80%;
+        transform: translateX(-50%);
+    }
+    .bannerQuote p{
+        font-size: 0.85rem;
+    }
+}   
+@media (max-width: 480px) {
+    .bannerQuote{
+        left: 70%;
+        bottom: 7%;
+        transform: translateX(-50%);
+    }
+    .banner{
+        height:50vh;
+    }
+    .bannerQuote p{
+        font-size: 0.65rem;
+    }
+}

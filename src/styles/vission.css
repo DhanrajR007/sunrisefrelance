@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap');
+
+.vision {
+  padding: 60px 5%;
+  background: #ffffff;
+  width: 100%;
+}
+
+.vision-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-label {
+  display: block;
+  color: #c49d5d;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-family: Inter, sans-serif;
+}
+
+.vision-content {
+  flex: 1;
+  max-width: 650px;
+}
+
+.vision-content h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 0.95;
+  font-weight: 400;
+  color: #111;
+}
+
+.vision-content p {
+  margin-top: 2rem;
+  color: #656c73;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-family: Inter, sans-serif;
+}
+
+.vision-stats {
+  display: flex;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+.vision-stats span {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  color: #6a7077;
+  margin-bottom: 0.8rem;
+  font-family: Inter, sans-serif;
+}
+
+.vision-stats h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #111;
+  line-height: 1.6;
+  font-family: Inter, sans-serif;
+}
+
+.vision-images {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.img-large {
+  width: clamp(240px, 24vw, 340px);
+  height: clamp(350px, 35vw, 520px);
+  object-fit: cover;
+  border-radius: 32px;
+  display: block;
+}
+
+.img-small {
+  width: clamp(200px, 20vw, 280px);
+  height: clamp(320px, 30vw, 460px);
+  object-fit: cover;
+  border-radius: 32px;
+  margin-top: 120px;
+  display: block;
+}
+
+/* ========================= */
+/* Large Tablet */
+/* ========================= */
+
+@media (max-width: 1200px) {
+  .vision {
+    padding: 100px 5%;
+  }
+
+  .vision-container {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+
+  .vision-content {
+    max-width: 100%;
+  }
+
+  .vision-images {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .img-small {
+    margin-top: 80px;
+  }
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .vision {
+    padding: 80px 24px;
+  }
+
+  .vision-container {
+    gap: 3rem;
+  }
+
+  .vision-content h2 {
+    font-size: 3rem;
+  }
+
+  .vision-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .vision-stats {
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+
+  .vision-images {
+    gap: 1rem;
+  }
+
+  .img-large {
+    width: 55%;
+    height: 400px;
+  }
+
+  .img-small {
+    width: 45%;
+    height: 340px;
+    margin-top: 60px;
+  }
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media (max-width: 576px) {
+  .vision {
+    padding: 60px 20px;
+  }
+
+  .vision-container {
+    gap: 2.5rem;
+  }
+
+  .section-label {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+  }
+
+  .vision-content h2 {
+    font-size: 2.3rem;
+    line-height: 1;
+  }
+
+  .vision-content p {
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+  }
+
+  .vision-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .vision-stats h4 {
+    font-size: 0.95rem;
+  }
+
+  .vision-images {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .img-large,
+  .img-small {
+    width: 100%;
+    max-width: 360px;
+    height: 300px;
+    margin-top: 0;
+  }
+}

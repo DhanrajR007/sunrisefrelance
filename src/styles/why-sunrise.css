@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap');
+
+.why-lyceum {
+  background: #f8f7f4;
+  padding: 60px 5%;
+}
+
+.why-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.section-tag {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: #c59b57;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+}
+
+.why-header h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 0.95;
+  font-weight: 400;
+  color: #101010;
+}
+
+.why-header p {
+  margin-top: 2rem;
+  max-width: 400px;
+  color: #666d73;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-family: Inter, sans-serif;
+}
+
+.discover-link {
+  text-decoration: none;
+  color: #111;
+  font-size: 1rem;
+  border-bottom: 1px solid #111;
+  padding-bottom: 10px;
+  white-space: nowrap;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background: rgba(255,255,255,0.35);
+  border: 1px solid #e3e0da;
+  border-radius: 32px;
+  padding: 2rem;
+  min-height: 320px;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+.icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  background: #ece9e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #244131;
+}
+
+.feature-card h3 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #181818;
+}
+
+.feature-card p {
+  margin-top: 1rem;
+  color: #666d73;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Tablet */
+
+@media (max-width: 1200px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .why-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  .why-header p {
+    font-size: 1.1rem;
+  }
+
+  .discover-link {
+    font-size: 1rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    min-height: auto;
+  }
+
+  .feature-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .feature-card p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap");
+
+.head-message {
+  background: #030d18;
+  padding: 30px 5%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.head-container {
+  max-width: 1400px;
+  margin: auto;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.head-image {
+  position: relative;
+  flex: 0 0 420px;
+}
+
+.head-image img {
+  width: 80%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 28px;
+  display: block;
+}
+
+.signature-badge {
+  position: absolute;
+  right: -25px;
+  bottom: -25px;
+
+  display: none;
+
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+  backdrop-filter: blur(12px);
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  align-items: center;
+  justify-content: center;
+}
+
+.signature-badge span {
+  color: #c9a15d;
+  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+
+.head-content {
+  max-width: 760px;
+}
+
+.head-subtitle {
+  display: inline-block;
+  margin-bottom: 2rem;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #c9a15d;
+  font-weight: 600;
+}
+
+.head-content h2 {
+  font-family: "Cormorant Garamond", serif;
+  color: #f1f1f1;
+
+  font-size: clamp(2rem, 2vw, 4.3rem);
+  line-height: 1.2;
+  font-weight: 400;
+
+  margin-bottom: 3rem;
+}
+
+.head-author h4 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.head-author p {
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 4px;
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+/* ==========================
+   LAPTOPS
+========================== */
+
+@media (max-width: 1200px) {
+  .head-container {
+    gap: 3rem;
+  }
+
+  .head-image {
+    flex: 0 0 360px;
+  }
+
+  .head-image img {
+    width: 100%;
+    height: 420px;
+  }
+
+  .head-content h2 {
+    font-size: clamp(2rem, 3vw, 3.5rem);
+  }
+}
+
+/* ==========================
+   TABLETS
+========================== */
+
+@media (max-width: 992px) {
+  .head-message {
+    min-height: auto;
+    padding: 80px 5%;
+  }
+
+  .head-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .head-image {
+    flex: none;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .head-image img {
+    width: 100%;
+    height: 500px;
+  }
+
+  .head-content {
+    max-width: 100%;
+  }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+  .head-message {
+    padding: 60px 20px;
+  }
+
+  .head-container {
+    gap: 2rem;
+  }
+
+  .head-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .head-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+  }
+
+  .head-subtitle {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+
+  .head-content h2 {
+    font-size: clamp(1.8rem, 6vw, 2.6rem);
+    line-height: 1.3;
+    margin-bottom: 2rem;
+  }
+
+  .head-author h4 {
+    font-size: 1.25rem;
+  }
+
+  .head-author p {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width: 480px) {
+  .head-message {
+    padding: 50px 15px;
+  }
+
+  .head-content h2 {
+    font-size: 1.7rem;
+  }
+
+  .head-subtitle {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .head-author h4 {
+    font-size: 1.1rem;
+  }
+
+  .head-author p {
+    font-size: 10px;
+  }
+}
