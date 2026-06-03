@@ -1,4 +1,4 @@
-import "../styles/why-sunrise.css";
+import "./why-sunrise.css";
 
 const features = [
   {
