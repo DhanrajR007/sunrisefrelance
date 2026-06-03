@@ -1,4 +1,4 @@
-import "../styles/campus.css";
+import "./campus.css";
 
 export default function CampusLife() {
   return (

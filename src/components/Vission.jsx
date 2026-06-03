@@ -1,4 +1,4 @@
-import "../styles/vission.css";
+import "./vission.css";
 
 export default function VisionSection() {
   return (

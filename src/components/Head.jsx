@@ -1,4 +1,4 @@
-import "../styles/head.css";
+import "./head.css";
 
 export default function HeadMessage() {
   return (
